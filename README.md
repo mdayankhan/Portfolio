@@ -6,3 +6,6 @@
 * 3rd - year
 * AIML
 * LNCT-S
+
+
+- [ ] PATH - portfolio/config/templates
