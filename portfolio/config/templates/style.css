@@ -1,0 +1,61 @@
+:root{
+    --mainText:black;
+    --secondaryText:black;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+}
+
+p, li, span, label, input, textarera{
+    color:var(--secondaryText);
+}
+/* ------------------- Contact  ----------------------- 
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 50%;
+}
+.contact-left p{
+margin-top: 30px;
+}
+.contact-left p i{
+    color: black;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.btn.btn2{
+display: inline-block;
+background: #28a5de55;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 70%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    background: #08a588;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.contact{
+    flex: 50px;
+}

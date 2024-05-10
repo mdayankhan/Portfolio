@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: white;
+            color: black
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            background-color: #c0436055;
+            font-family: "Briem Hand", cursive;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 17px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li a:hover {
+            color: blue;
+            font-size: 1.03rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: darkgray;
+            height: 1px;
+            margin: 40px 80px;
+        }
+
+        .left {
+            font-size: 1.8rem;
+            padding: 40px;
+        }
+
+        .firstSection {
+            margin: 60px 0px;
+            height: 75vh;
+            gap: 500px;
+        }
+
+        .rightSection {
+            padding: 0px 0px 0px 0px;
+        }
+
+        .leftSection {
+            justify-content: center;
+            padding: 100px 0px 100px 100px;
+            font-size: 3rem;
+        }
+
+        .leftSection .bbtn {
+            padding: 50px 0;
+        }
+
+        .leftSection .buttons a {
+            padding: 12px;
+            background: #d9e3e9;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 14px;
+            text-decoration: none;
+            font-family: "Briem Hand", cursive;
+        }
+
+        .leftSection .buttons a:hover {
+            color: rgb(201, 10, 61);
+        }
+
+        #element {
+            color: rgb(201, 10, 61);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+
+        .text-gray {
+            color: rgb(0, 0, 0);
+            padding: 70px;
+            font-size: 30px;
+        }
+
+        .leftIntro {
+            height: 10vh;
+            margin: 100px;
+        }
+
+        .thirdSection {
+            max-width: 100vw;
+            margin: 50px;
+            height: 60%;
+            padding-left: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color: #d9e3e9;">
+    <header>
+        <nav>
+            <div class="left">
+                <h5>Mohammad Ayan Khan</h5>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="resume.pdf">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="firstSection" , style="display: flex;">
+            <div class="leftSection">
+                Hello there, I'm Ayan Khan.
+                <div>
+                    and I am a passionate <br><span id="element"></span>
+                    <br>
+                    <div class="bbtn" download>
+                        <button class="buttons">
+                            <a href="resume.pdf">
+                                Download Resume
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="image/ayan1.jpg" alt="" style="border-radius: 30%;" width="350vw">
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="secondSection">
+            <h1 style="font-size: 35PX;">
+                About me
+            </h1>
+            <br>
+            <br>
+            <span class="text-gray">
+                Introduction :
+            </span>
+            <div class="leftIntro">
+                <p style="font-size: 25px;">
+                    Hello there! I'm a Computer Science student with a specialization for Artificial Intelligence and
+                    Machine Learning. Delving into the depths of algorithms and data, I thrive on the challenges of
+                    creating intelligent systems that can learn, adapt, and evolve.
+                </p>
+                <p style="font-size: 25PX;"> In addition to my technical pursuits, I'm also deeply engrossed in the
+                    realm of UI/UX design. I
+                    believe in the power of intuitive interfaces to enhance user experiences, seamlessly bridging the
+                    gap between humans and technology.
+                </p>
+                <p style="font-size: 25px;"> the screen, I'm an avid field hockey player, having competed at the state
+                    level. The fast-paced
+                    nature of the game has taught me invaluable lessons in strategy, teamwork, and resilience, shaping
+                    me into a well-rounded individual both on and off the field.
+                </p>
+                <p style="font-size: 25px;"> a diverse skill set spanning technology, design, and athletics, I'm
+                    passionate about pushing
+                    boundaries and making meaningful contributions in all aspects of my life.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <section class="thirdSection">
+                <form>
+                    <h1 class="contact">Contact</h1>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="name" id="name" placeholder="Your name" required>
+                    </div>
+                    <br>
+                    <div id="contact" class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Your Email">
+                        <div id="emailHelp" class="form-text"><br>We'll never share your email with anyone else.</div>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label for="phonenumber" class="form-label">Phone Number</label>
+                        <input type="number" class="form-control" id="phonenumber" placeholder="Your number">
+                    </div><br>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </section>
+            <div class="copyright">Copyright © Ayan Khan 2024</div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web Designer</i>', '<i>Graphic Designer<i>', '<i>Ui/Ux</i> Designer.'],
+            typeSpeed: 70,
+        });
+    </script>
+</body>
+</html>
